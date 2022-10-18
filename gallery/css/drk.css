@@ -1,0 +1,415 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --hue-color: 7;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+  /* hsl(225, 21%, 35%) */
+  /* hsl(20, 54%, 82%) */
+  /* hsl(31, 41%, 91%) */
+  /* hsl(29, 26%, 26%) */
+
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 42%, 66%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  /* --body-color: hsl(var(--hue-color), 60%, 99%); */
+  --body-color: hsl(30, 41%, 91%);
+  --nav__munu-color: hsl(16, 50%, 77%);
+  --container-color: #fff;
+  /* --container-color: hsl(19,53,83); */
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --signature-font: "Caveat", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  /* background-color: var(--body-color); */
+  background-color: hsl(30, 41, 91);
+
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main {
+    padding: 0 1rem;
+  }
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 6rem 0 2rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
+}
+
+/*==================== ABOUT ====================*/
+.about__img {
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name {
+  font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+/* ====================iframe ================ */
+/* .wrapp{
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid red;
+
+}
+
+.wrapper__iframe{
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  border: 1px solid green;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  
+} */
+
+/* .wrapper__iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  
+} */
+
+/* iframe */
+
+.iframe {
+  margin-bottom: 45px;
+  /* border: 3px solid #131C28; */
+  overflow: hidden;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.iframe iframe {
+  width: 100%;
+  height: 600px;
+  border: 0;
+  display: block;
+}
+
+.iframe-header {
+  display: none;
+}
+
+.js .iframe-header {
+  display: block;
+}
+
+.iframe-content {
+  /* ipad iframe hack */
+  height: 400px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.iframe-header a {
+  font-size: 15px;
+  color: white;
+  background: #3B4658;
+  display: block;
+  padding: 15px;
+  text-align: center;
+  /* border-bottom: 3px solid #131C28; */
+}
+
+.iframe-header a:hover,
+.iframe-header a:focus {
+  background: #6A798E;
+}
+
+.iframe-full-screen .iframe-header {
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+
+.iframe-full-screen .iframe-content {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.iframe-full-screen .iframe-header a {
+  padding: 0;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  /* border: 3px solid #131C28; */
+}
+
+.iframe-full-screen body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.iframe-full-screen .iframe.iframe-active{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  border: none;
+}
+
+.iframe-full-screen .iframe iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.wrapper-iframe {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+@media all and (max-height: 400px){
+  .iframe {
+    height: 300px;
+  }
+}
+
+
+/* =================== */
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+  .text__container {
+    margin: 1rem 2rem;
+  }
+}
+/* ---------for medium devices ----------------- */
+
+@media screen and (min-width: 568px) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text__container {
+    margin: 1rem 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__container {
+    column-gap: 5rem;
+  }
+
+  .about__img {
+    width: 350px;
+  }
+
+  .about__description {
+    text-align: initial;
+  }
+
+  .about__info {
+    justify-content: space-between;
+  }
+
+  .about__buttons {
+    justify-content: initial;
+  }
+  .text__container {
+    margin: 1rem 10rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 568px) {
+  .text__container {
+    margin: 1rem 3rem;
+  }
+}
