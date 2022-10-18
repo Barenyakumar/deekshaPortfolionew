@@ -734,6 +734,7 @@ img {
   /* width: 300px; perfect  */
   border-radius: 0.5rem;
   justify-self: center;
+  
 }
 
 .portfolio__title {
@@ -897,8 +898,6 @@ img {
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
-
-
 
 /*==================== FOOTER ====================*/
 .footer {
