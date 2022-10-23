@@ -140,7 +140,7 @@ function SendMail() {
     message: document.getElementById("form__message").value
   }
   emailjs.send("service_gyr1vwj", "template_8gjf3od",params).then(function(res){
-    alert("Success!"+res.status);
+    alert("Thanks for contacnting !");
   })
 }
 

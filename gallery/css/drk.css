@@ -222,6 +222,30 @@ img {
   /* align-items: center; */
 }
 
+.imgDRK{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+}
+
+.textDKR{
+  width: 70%;
+  margin-top: 2rem;
+  
+}
+
+.DRKcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DKRpara{
+  text-align: center;
+}
 
 /* ====================iframe ================ */
 /* .wrapp{

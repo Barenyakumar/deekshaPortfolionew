@@ -1,56 +1,196 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICONS ===============-->
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!--==================== REMIXICONS ====================-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="./gallery/css/swiper-bundle.min.css" />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./gallery/css/styles.css" />
-    <link rel="stylesheet" href="./gallery/css/drk.css" />
-    <link rel="stylesheet" href="./gallery/css/community.css" />
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./gallery/css/gratitude.css" />
+    <!-- <link rel="stylesheet" href="./gallery/css/drk.css" /> -->
 
-    <title>Gallery deeksha</title>
+    <title>COMMUNITY SERVICE</title>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init("SSSviT3qOTsudeByA")
+      })()
+    </script>
   </head>
   <body>
-    <!-- text -->
-    <main class="main">
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <div class="nav container">
+        <a href="./index.html" class="nav__logo" id="deeksha">Deeksha</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link" active-link>
+                <i class="uil uil-estate nav__icon"></i>COMMUNITY SERVICE
+
+              </a>
+            </li>
+           
+            
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <!-- Theme Change -->
+        <div class="nav__btns">
+          <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--==================== MAIN ====================-->
+  <main class="main">
       <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <h2 class="section__title">COMMUNITY SERVICE</h2>
+       <section class="about section" id="about">
+        <h2 class="section__title">COMMUNITY SERVICE
+ </h2>
+        <span class="section__subtitle">MAKING DIPLOMACY MATTER</span>
+        <div class="about__container container ">
+          <!-- <img src="./gallery/img/aqua/1.svg" alt="" class="about__img" /> -->
+           <div class="about__data">
+            <p class="about__description">
+             With the paradigm shift towards the digital world during and post the pandemic, it was a great experience to inculcate the same in a rural and underlying area of my state. A group of 50+ healthcare workers were handed over smartphones at the COVID-19 Health care centre, in Telangana, India. My friends and I organised a small scale mutual fund raiser from nearest friends and family for making this happen. We conducted a digital awareness campaign to help the health workers navigate through the app COWIN, that was released by the central government of India, for real time monitoring of COVID-19 Facilities. The rural population was educated about the importance of digital systems and how the tasks of their everyday lives would be eased out once they get accustomed to using them. I believe through technology, the population from backward sections will become more aware of government schemes being offered to them- they’ll in turn have adequate knowledge about their privileges, and can thereby question authorities when their rights are violated. I hope to play my role in implementing technology in every rural pocket of India.  
 
-        <div class="text__container">
 
-          <p class="about__description">
-            With the paradigm shift towards the digital world during and post the pandemic, it was a great experience to inculcate the same in a rural and underlying area of my state. A group of 50+ healthcare workers were handed over smartphones at the COVID-19 Health care centre, in Telangana, India. My friends and I organised a small scale mutual fund raiser from nearest friends and family for making this happen. We conducted a digital awareness campaign to help the health workers navigate through the app COWIN, that was released by the central government of India, for real time monitoring of COVID-19 Facilities.
-          </p>
 
-          <img src="./gallery/img/community/community1.jpg" alt="" class="text__container__img">
-          <p class="about__description">
-            The rural population was educated about the importance of digital systems and how the tasks of their everyday lives would be eased out once they get accustomed to using them. I believe through technology, the population from backward sections will become more aware of government schemes being offered to them- they’ll in turn have adequate knowledge about their privileges, and can thereby question authorities when their rights are violated. I hope to play my role in implementing technology in every rural pocket of India.  
+            </p>
+            <!-- <div class="about__info">
+              Featuring the YouTube Link :
 
-          </p>
-          <img src="./gallery/img/community/cummunity2.jpg" alt="" class="text__container__img">
-
+            </div> 
+            <div class="about__buttons">
+              <a
+                download=""
+                href="https://youtu.be/E0jOx7Y0P7U"
+                class="button button--flex" target="_blank"
+                >Watch<i class="ri-youtube-line button__icon"></i>
+                
+              </a>
+            </div> -->
+          </div>
+          
           
         </div>
+      </section>
+
+ 
+   
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <!-- <h2 class="section__title">Student Council</h2>
+        <span class="section__subtitle">Experiences from high school...</span> -->
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+
+            <!-- ================ PORTFOLIO 1=========================== -->
+
+            <div class="portfolio__content  swiper-slide">
+              <img
+                src="./gallery/img/community/community1.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              
+            </div>
+
+
+            <!-- ================ PORTFOLIO 2=========================== -->
+
+            <div class="portfolio__content  swiper-slide">
+              <img
+                src="./gallery/img/community/cummunity2.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+             
+            </div>
+
 
         
-      </section>
-    </main>
+
+
+
+
+
+
+           
+
+          
+
+
+
+            
+
+          </div>
+
+          <!-- Add Arrows -->
+
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section> 
+
+
+
+      
+  
+   
+
+    
 
     <!--=============== SWIPER JS ===============-->
     <script src="./gallery/js/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="./gallery/js/main.js"></script>
+  
+
+     
+     
+    </main>
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

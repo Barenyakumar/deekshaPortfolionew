@@ -464,7 +464,7 @@ img {
 .about__buttons {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 /*==================== SKILLS ====================*/
@@ -536,7 +536,19 @@ img {
 
 /* changes bar width */
 .skills__html {
-  width: 50%;
+  width: 75%;
+}
+
+.skills__html {
+  width: 70%;
+}
+
+.skills__js {
+  width: 65%;
+}
+
+.skills__py {
+  width: 55%;
 }
 
 .skills__close .skills__list {
@@ -1197,11 +1209,11 @@ img {
   }
 
   .about__info {
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .about__buttons {
-    justify-content: initial;
+    /* justify-content: initial; */
   }
 
   .qualification__tabs {
