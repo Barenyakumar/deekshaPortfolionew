@@ -21,6 +21,7 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./gallery/css/gratitude.css" />
     <!-- <link rel="stylesheet" href="./gallery/css/drk.css" /> -->
+    <link rel="stylesheet" href="./gallery/css/blockquote.css" />
 
     <title>Gratitude Day</title>
 
@@ -56,7 +57,6 @@
                 <i class="uil uil-file-alt nav__icon"></i>Gratitude Day
               </a>
             </li>
-            
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
@@ -71,24 +71,54 @@
     </header>
 
     <!--==================== MAIN ====================-->
-  <main class="main">
+    <main class="main">
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <h2 class="section__title">Gratitude</h2>
-        <span class="section__subtitle">"We learned about gratitude and humility... that so many had a hand in our success" - Michelle Obama 
-</span>
+
+        <!-- <span class="section__subtitle">
+          
+          "We learned about gratitude and humility... that so many had a hand in
+          our success" - Michelle Obama
+        </span> -->
+
+        <div class="blockquote__div">
+           <blockquote
+            class="blockquote blockquote--bordered blockquote--quoted"
+          >
+            <p class="blockquote__text">
+              We learned about gratitude and humility... that so many had a hand in
+          our success
+            </p>
+            <p class="blockquote__text blockquote__text--credit">Michelle Obama</p>
+          </blockquote>
+        </div>
+
         <div class="about__container container grid">
-          <img src="./gallery/img/gratitude/gratitude.jpg" alt="" class="about__img" />
+          <img
+            src="./gallery/img/gratitude/gratitude.jpg"
+            alt=""
+            class="about__img"
+          />
 
           <div class="about__data">
             <p class="about__description">
-              The event of Gratitude Day received active funds making it the Student Council’s one of most successful fundraisers throughout our journey. We often fail to notice the importance of the role played by the non-teaching staff such as the housekeeping, motor drivers and other ground workers who work relentlessly each day. The council took the initiative to arrange and serve lunch to the department as a token of heartfelt gratitude for their toil. Besides, to let them have a day off, several fun activities were planned out - Rangoli Competition, Kite Flying and other games. 
-Several review meets were conducted to keep track of the contributions. The total collections hit a net amount of rupees 48,000+. Moreover, with the surplus funds, we arranged small gifts for the staff as well. 
-Students were widely encouraged to donate their share of funds and received tremendous cooperation from them. 
-The non-teaching staff cherished the day and showered the council with blessings. It was a colourful sight.
-
-
-
+              The event of Gratitude Day received active funds making it the
+              Student Council’s one of most successful fundraisers throughout
+              our journey. We often fail to notice the importance of the role
+              played by the non-teaching staff such as the housekeeping, motor
+              drivers and other ground workers who work relentlessly each day.
+              The council took the initiative to arrange and serve lunch to the
+              department as a token of heartfelt gratitude for their toil.
+              Besides, to let them have a day off, several fun activities were
+              planned out - Rangoli Competition, Kite Flying and other games.
+              Several review meets were conducted to keep track of the
+              contributions. The total collections hit a net amount of rupees
+              48,000+. Moreover, with the surplus funds, we arranged small gifts
+              for the staff as well. Students were widely encouraged to donate
+              their share of funds and received tremendous cooperation from
+              them. The non-teaching staff cherished the day and showered the
+              council with blessings. It was a colourful sight.
             </p>
             <!-- <div class="about__info">
               <div>
@@ -134,13 +164,7 @@ The non-teaching staff cherished the day and showered the council with blessings
             suscipit sequi incidunt optio?
           </p>
         </div> -->
-
-        
       </section>
-
-
- 
-   
 
       <!--==================== PORTFOLIO ====================-->
       <section class="portfolio section" id="portfolio">
@@ -149,10 +173,9 @@ The non-teaching staff cherished the day and showered the council with blessings
 
         <div class="portfolio__container container swiper-container">
           <div class="swiper-wrapper">
-
             <!-- ================ PORTFOLIO 1=========================== -->
 
-            <div class="portfolio__content  swiper-slide">
+            <div class="portfolio__content swiper-slide">
               <img
                 src="./gallery/img/gratitude/gratitude1.jpg"
                 alt=""
@@ -174,10 +197,9 @@ The non-teaching staff cherished the day and showered the council with blessings
               </div> -->
             </div>
 
-
             <!-- ================ PORTFOLIO 2=========================== -->
 
-            <div class="portfolio__content  swiper-slide">
+            <div class="portfolio__content swiper-slide">
               <img
                 src="./gallery/img/gratitude/gratitude2.jpg"
                 alt=""
@@ -199,10 +221,9 @@ The non-teaching staff cherished the day and showered the council with blessings
               </div> -->
             </div>
 
-
             <!-- ================ PORTFOLIO 3=========================== -->
 
-            <div class="portfolio__content  swiper-slide">
+            <div class="portfolio__content swiper-slide">
               <img
                 src="./gallery/img/gratitude/gratitude3.jpg"
                 alt=""
@@ -224,12 +245,9 @@ The non-teaching staff cherished the day and showered the council with blessings
               </div> -->
             </div>
 
-
-
-
             <!-- ================ PORTFOLIO 4=========================== -->
 
-            <div class="portfolio__content  swiper-slide">
+            <div class="portfolio__content swiper-slide">
               <img
                 src="./gallery/img/gratitude/gratitude4.jpg"
                 alt=""
@@ -250,15 +268,6 @@ The non-teaching staff cherished the day and showered the council with blessings
                 </a>
               </div> -->
             </div>
-
-           
-
-          
-
-
-
-            
-
           </div>
 
           <!-- Add Arrows -->
@@ -273,27 +282,14 @@ The non-teaching staff cherished the day and showered the council with blessings
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
         </div>
-      </section> 
+      </section>
 
+      <!--=============== SWIPER JS ===============-->
+      <script src="./gallery/js/swiper-bundle.min.js"></script>
 
-
-      
-  
-   
-
-    
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="./gallery/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="./gallery/js/main.js"></script>
-  
-
-     
-     
+      <!--=============== MAIN JS ===============-->
+      <script src="./gallery/js/main.js"></script>
     </main>
-
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
